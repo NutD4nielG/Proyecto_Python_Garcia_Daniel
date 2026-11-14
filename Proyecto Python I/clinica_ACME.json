@@ -1,0 +1,177 @@
+{
+    "Usuarios": [
+        {
+            "No.Identificación": "0000",
+            "Nombres": "Admin",
+            "Apellidos": "Administrador",
+            "No De Teléfono": "555000111",
+            "e_mail": "admin@acmeclinic.com",
+            "Dirección": "Cl 185 # 26-85",
+            "Contraseña": "010203"
+        },
+        {
+            "No.Identificación": "1001188704",
+            "Nombres": "Daniel",
+            "Apellidos": "Garcia",
+            "No De Teléfono": "3164863139",
+            "e_mail": "daniel@acmeclinic.com",
+            "Dirección": "Cll 14 # 2-37",
+            "Contraseña": "12986"
+        }
+    ],
+    "Pacientes": [
+        {
+            "Identificación": "60383036",
+            "Tipo de identificación": "CC",
+            "Nombres": "Sandra Daniela",
+            "Apellidos": "Alvarez Torres",
+            "Género": "Femenino",
+            "Fecha de nacimiento": "10/04/1990",
+            "No De Teléfono": "3161514390",
+            "Entidad": "Nueva EPS",
+            "e_mail": "sandra@gmail.com",
+            "Dirección": "Cll 33- Barrio nuevo",
+            "Estado civil": "Soltera"
+        },
+        {
+            "Identificación": "100200300",
+            "Tipo de identificación": "CC",
+            "Nombres": "Gabriela Andrea",
+            "Apellidos": "Arias Alvarez",
+            "Género": "Femenino",
+            "Fecha de nacimiento": "15/07/1980",
+            "No De Teléfono": "315484397",
+            "Entidad": "Coosalud",
+            "e_mail": "Gabriela@gmail.com",
+            "Dirección": "Quinta oriental",
+            "Estado civil": "Casada"
+        }
+    ],
+    "Historias": [
+        {
+            "Historia": [
+                {
+                    "Nombre Paciente": "Sandra Daniela",
+                    "Fecha de nacimiento": "10/04/1990",
+                    "Dirección": "Cll 33- Barrio nuevo",
+                    "Entidad": "Nueva EPS",
+                    "Tipo de identificación": "CC",
+                    "Identificación": "60383036",
+                    "Género": "Femenino"
+                },
+                {
+                    "Antecedentes": "Alergicos: Niega, Quirurgicos: Niega, Alimentarios: Niega, Familiares: Alzheimer"
+                },
+                {
+                    "Frecuencia cardiaca": "130",
+                    "Frecuencia respiratoria": "17",
+                    "Peso": "70",
+                    "Talla": "167",
+                    "Temperatura": "38",
+                    "Glasgow": "14",
+                    "Descripción": "Paciente femenina que visita el servicio de urgencias por aparente dolor irrigado en brazo izquierdo con dolor punsante",
+                    "Síntomas": "Cefalea, Diaforesis, Fiebre, vómito",
+                    "Diágnostico": "Síndrome febril agudo con dolor irradiado en estudio; descartar proceso infeccioso"
+                }
+            ],
+            "Historia2": [
+                [
+                    {
+                        "Cantidad": 1,
+                        "Descripción": "Ibuprofeno",
+                        "Vía de administración": "Oral",
+                        "Posología": "600mg cada 8 horas",
+                        "Días de tratamiento": "5"
+                    },
+                    {
+                        "Cantidad": 3,
+                        "Descripción": "Ondansetrón - ampolla",
+                        "Vía de administración": "Intravenoso",
+                        "Posología": "8mg cada 8 horas",
+                        "Días de tratamiento": "1"
+                    }
+                ],
+                [
+                    {
+                        "Cantidad": 1,
+                        "Descripción": "EKG",
+                        "Observaciones": "Prioritario"
+                    }
+                ]
+            ],
+            "Identificación": "60383036",
+            "Médico": "Admin",
+            "Fecha de atención": "2026-11-13"
+        },
+        {
+            "Historia": [
+                {
+                    "Nombre Paciente": "Gabriela Andrea",
+                    "Fecha de nacimiento": "15/07/1980",
+                    "Dirección": "Quinta oriental",
+                    "Entidad": "Coosalud",
+                    "Tipo de identificación": "CC",
+                    "Identificación": "100200300",
+                    "Género": "Femenino"
+                },
+                {
+                    "Antecedentes": "La paciente al momento de ingresar al servicio de urgencias niega todo tipo de antecedentes"
+                },
+                {
+                    "Frecuencia cardiaca": "70",
+                    "Frecuencia respiratoria": "13",
+                    "Peso": "45",
+                    "Talla": "156",
+                    "Temperatura": "36",
+                    "Glasgow": "13",
+                    "Descripción": "Paciente que consulta por somnolencia y desorientación leve de inicio reciente. Al examen, alerta parcial, con signos vitales estables y afebril.",
+                    "Síntomas": "Cefalea,somnolencia,desorientación",
+                    "Diágnostico": "Alteración leve de conciencia en estudio"
+                }
+            ],
+            "Historia2": [
+                [
+                    {
+                        "Cantidad": 2,
+                        "Descripción": "Solución salina 0,9 % bolsa x 500 mL",
+                        "Vía de administración": "Intravenosa",
+                        "Posología": "80ml/hora",
+                        "Días de tratamiento": "1"
+                    },
+                    {
+                        "Cantidad": 3,
+                        "Descripción": "Dipirona 1 g ampolla",
+                        "Vía de administración": "Intravenosa",
+                        "Posología": "1 g cada 8 horas sí hay dolor",
+                        "Días de tratamiento": "1"
+                    }
+                ],
+                [
+                    {
+                        "Cantidad": 1,
+                        "Descripción": "Glucometría",
+                        "Observaciones": "Urgente"
+                    },
+                    {
+                        "Cantidad": 1,
+                        "Descripción": "Hemograma completo",
+                        "Observaciones": "Ninguna"
+                    },
+                    {
+                        "Cantidad": 1,
+                        "Descripción": "Electrolitos (sodio, potasio)",
+                        "Observaciones": "Ninguna"
+                    },
+                    {
+                        "Cantidad": 1,
+                        "Descripción": "TAC de cráneo simple",
+                        "Observaciones": "Por alteración del estado de conciencia"
+                    }
+                ]
+            ],
+            "Identificación": "100200300",
+            "Médico": "Daniel",
+            "Fecha de atención": "2026-11-13"
+        }
+    ]
+}

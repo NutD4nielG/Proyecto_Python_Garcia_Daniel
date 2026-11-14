@@ -1,0 +1,56 @@
+{
+    "Fecha": "2026-11-13",
+    "Médico": "Daniel",
+    "Paciente": "100200300",
+    "Examen físico": {
+        "Frecuencia cardiaca": "70",
+        "Frecuencia respiratoria": "13",
+        "Peso": "45",
+        "Talla": "156",
+        "Temperatura": "36",
+        "Glasgow": "13",
+        "Descripción": "Paciente que consulta por somnolencia y desorientación leve de inicio reciente. Al examen, alerta parcial, con signos vitales estables y afebril.",
+        "Síntomas": "Cefalea,somnolencia,desorientación",
+        "Diágnostico": "Alteración leve de conciencia en estudio"
+    },
+    "Plan de manejo": [
+        [
+            {
+                "Cantidad": 2,
+                "Descripción": "Solución salina 0,9 % bolsa x 500 mL",
+                "Vía de administración": "Intravenosa",
+                "Posología": "80ml/hora",
+                "Días de tratamiento": "1"
+            },
+            {
+                "Cantidad": 3,
+                "Descripción": "Dipirona 1 g ampolla",
+                "Vía de administración": "Intravenosa",
+                "Posología": "1 g cada 8 horas sí hay dolor",
+                "Días de tratamiento": "1"
+            }
+        ],
+        [
+            {
+                "Cantidad": 1,
+                "Descripción": "Glucometría",
+                "Observaciones": "Urgente"
+            },
+            {
+                "Cantidad": 1,
+                "Descripción": "Hemograma completo",
+                "Observaciones": "Ninguna"
+            },
+            {
+                "Cantidad": 1,
+                "Descripción": "Electrolitos (sodio, potasio)",
+                "Observaciones": "Ninguna"
+            },
+            {
+                "Cantidad": 1,
+                "Descripción": "TAC de cráneo simple",
+                "Observaciones": "Por alteración del estado de conciencia"
+            }
+        ]
+    ]
+}
