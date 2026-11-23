@@ -35,7 +35,8 @@ def historia1(histo):
                 "Identificación": histo["Identificación"],
                 "Género": histo["Género"]
                 }
-    print(diccDatosP)
+    for seccion in diccDatosP:
+        print(f"{seccion}: {diccDatosP[seccion]}")
     print("="*50)
     print("\t\tDatos de ingreso")
     print("="*50) #Diccionario de Antecedentes

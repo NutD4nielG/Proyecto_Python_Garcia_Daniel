@@ -12,10 +12,9 @@ def registro_usu(): #Función de registro de usuarios
                 "No De Teléfono": input("Número de teléfono: "),
                 "e_mail": input("E-mail(Corporativo): "),
                 "Dirección": input("Dirección: "),
-                "Contraseña": prim_contrasena()
-        }
-        print("="*50)
-        print(f"Su contraseña temporal es {diccRegUsu["Contraseña"]}")
+                "Contraseña": input("Contraseña: "),
+                "Rol": rol()
+                }
         print("="*50)
         return diccRegUsu
 
@@ -39,6 +38,13 @@ def prim_contrasena(): #Función de generar primera contraseña
     resutlado = "".join(map(str,contrasena))
     return resutlado
 
+def rol():
+    tipo_rol = input("Rol: ").capitalize()
+    try:
+        if tipo_rol == "Médico" or tipo_rol == "Administrativo":
+            return rol
+    except NameError:
+            print("Rol válido")
 
 
 # reg = registro_usu()

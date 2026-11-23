@@ -1,0 +1,34 @@
+{
+    "Fecha": "2026-11-22",
+    "Médico": "Daniel Ricardo",
+    "Paciente": "100200300",
+    "Examen físico": {
+        "Frecuencia cardiaca": "140",
+        "Frecuencia respiratoria": "20",
+        "Peso": "78",
+        "Talla": "165",
+        "Temperatura": "39",
+        "Glasgow": "15",
+        "Descripción": "Paciente femenino que ingresa al servicio de urgencias con fiebre, taquicardia e hiperventilando, refiere empezar el episodio de repente cundo se encontraba sentada en la sala de su casa.",
+        "Síntomas": "Fiebre, hiperventilación,taquicardia",
+        "Diágnostico": "Síndrome febril agudo con taquicardia en estudio; descartar proceso infeccioso (sepsis) vs. crisis de ansiedad"
+    },
+    "Plan de manejo": [
+        [
+            {
+                "Cantidad": 1,
+                "Descripción": "Acetaminofen",
+                "Vía de administración": "Intravenosa",
+                "Posología": "500cc cada 12 horas",
+                "Días de tratamiento": "2"
+            }
+        ],
+        [
+            {
+                "Cantidad": 1,
+                "Descripción": "EKG",
+                "Observaciones": "Ninguna"
+            }
+        ]
+    ]
+}

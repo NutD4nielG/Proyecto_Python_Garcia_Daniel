@@ -60,10 +60,24 @@ while True:
                             if busca_px == None:
                                 print("Sin coincidencias")
                             else:
-                                print(busca_px)
                                 for consulta in lst_Histo:
                                     if documento == consulta["Identificación"]:
-                                        print(consulta)
+                                        print("="*50)
+                                        print("\tHISTORIA CLINICA - CLÍNICA ACME")
+                                        print("="*50)
+                                        print(f"Médico tratante: {consulta["Médico"]} | Fecha de atención: {consulta["Fecha de atención"]}")
+                                        print("="*50)
+                                        for seccion in consulta["Historia"]:
+                                            for seccion2 in seccion:
+                                                print(f"{seccion2}: {seccion[seccion2]}")
+                                        print("="*50)
+                                        print("\t\tPlan de manejo")
+                                        print("="*50)
+                                        for seccion3 in consulta["Historia2"]:
+                                            for seccion4 in seccion3:
+                                                for seccion5 in seccion4:
+                                                    print(f"{seccion5}: {seccion4[seccion5]}")
+                                                print("-"*50)
 
                         case 5: #Cerrar sesión
                             print("\t\t¿Desea Cerrar sesión?")
