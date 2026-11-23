@@ -78,8 +78,10 @@ while True:
                                                 for seccion5 in seccion4:
                                                     print(f"{seccion5}: {seccion4[seccion5]}")
                                                 print("-"*50)
+                        case 5: #Generar reporte
+                            modulo4JSON.reporte_anual()
 
-                        case 5: #Cerrar sesión
+                        case 6: #Cerrar sesión
                             print("\t\t¿Desea Cerrar sesión?")
                             print("\t\t\tY/N")
                             salida = input("").upper()

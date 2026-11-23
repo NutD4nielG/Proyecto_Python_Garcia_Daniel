@@ -18,7 +18,8 @@ def menu2(doctor):
     \t\t2.Registrar paciente
     \t\t3.Diligenciar historia clínica
     \t\t4.Buscar historia
-    \t\t5.Cerrar sesión""")
+    \t\t5.Generar reporte
+    \t\t6.Cerrar sesión""")
 
 #Inicio de sesión
 def login(lst_usu):

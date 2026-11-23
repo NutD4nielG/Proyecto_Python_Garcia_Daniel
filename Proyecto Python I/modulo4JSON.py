@@ -18,3 +18,38 @@ def guardarDat(lista,archivo):
     clinica_Acme = ruta + archivo
     with open(clinica_Acme,"w",encoding="utf-8") as acme:
         json.dump(lista,acme,indent=4,ensure_ascii=False)
+
+def reporte_anual():
+    datos = cargueDat("clinica_ACME.json")
+    soloanio = []
+    for reporte in datos["Historias"]:
+        fecha = reporte["Fecha de atención"]
+        anios = fecha[0:4]
+        if anios.isdigit():
+            if anios not in soloanio:
+                soloanio.append(anios)
+        else:
+            print("Fecha inválida")
+    print(soloanio)
+    reportej = {"años":{}}
+    for un_anio in soloanio:
+        total = 0
+        suma_sintomas = 0
+        medicos = []
+        pacientes = []
+        for reporte in datos["Historias"]:
+            fecha = reporte["Fecha de atención"]
+            if fecha[0:4] == un_anio:
+                total += 1
+                sintomas = reporte["Historia"][2]["Síntomas"]
+                suma_sintomas += len(sintomas.split(","))
+                if reporte["Médico"] not in medicos:
+                    medicos.append(reporte["Médico"])
+                if reporte["Identificación"] not in pacientes:
+                    pacientes.append(reporte["Identificación"])
+    promedio_sintomas = suma_sintomas / total
+    print(un_anio,total,len(medicos),len(pacientes),promedio_sintomas)
+
+
+test = reporte_anual()
+

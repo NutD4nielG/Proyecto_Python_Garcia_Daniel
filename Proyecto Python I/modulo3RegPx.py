@@ -52,7 +52,7 @@ def historia1(histo):
                     "Glasgow": input("Glasgow:"),
                     "Descripción": input("Descripción: "),
                     "Síntomas": input("Síntomas: "),
-                    "Diágnostico": input("Diágnostico: "),
+                    "Diagnóstico": input("Diágnostico: "),
                     }
     return diccDatosP,diccDatosAnt,diccExFisico
 
