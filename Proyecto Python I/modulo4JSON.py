@@ -48,8 +48,14 @@ def reporte_anual():
                 if reporte["Identificación"] not in pacientes:
                     pacientes.append(reporte["Identificación"])
     promedio_sintomas = suma_sintomas / total
+    reportej["años"][un_anio] = {"total_diagnosticos": total,
+                        "medicos_participantes": len(medicos),
+                        "pacientes_atendidos": len(pacientes),
+                        "promedio_sintomas": promedio_sintomas}
     print(un_anio,total,len(medicos),len(pacientes),promedio_sintomas)
+    guardarDat(reportej,"reporte_anual.json")
+    print("Reporte generado")
 
 
-test = reporte_anual()
+#test = reporte_anual()
 

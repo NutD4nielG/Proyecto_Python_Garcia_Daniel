@@ -1,0 +1,10 @@
+{
+    "años": {
+        "2026": {
+            "total_diagnosticos": 1,
+            "medicos_participantes": 1,
+            "pacientes_atendidos": 1,
+            "promedio_sintomas": 3.0
+        }
+    }
+}
